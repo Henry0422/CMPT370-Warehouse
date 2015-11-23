@@ -1,0 +1,18 @@
+Operations: checkBinCapacity(itemBin: binID)
+Cross References: use cases: Routing Stocking Tasks
+Preconditions: 
+							itemBin instance b exists
+							b exists within the set of bin ID's
+Postconditions: 
+							ItemList instance iL was created
+							Item instances i[] were created
+							i associated with item instance j from database
+							Float instance sum was created
+							sum became i[].size
+
+Operations: getItemLocation(item: productID)
+Cross References: use cases: Routing Stocking Tasks
+Preconditions: Item instance i exists
+Postconditions: 
+							Integer instance n was created
+							n was associated with Bin ID instance b from database

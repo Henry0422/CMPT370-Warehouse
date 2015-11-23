@@ -1,0 +1,5 @@
+Change Verible Name:
+In ReceiverUI.java, from line 39 to line 58. 
+Change the verible name from jTextfield1,jTextfield2,jTextfield3.... to  more reasonable names;
+For example, jTextfield1 is changed to nameTextField.
+After refactoring, the code is easier to maintain.

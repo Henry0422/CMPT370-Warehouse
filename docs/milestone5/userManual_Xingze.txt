@@ -1,0 +1,78 @@
+
+/******************************************************************/
+
+/******************************************************************/
+
+Receiver System:
+Login the system, click Receiver button at the right side of main interface.
+
+Input all the information of incoming item. Then Press Confirm.
+
+The new item will write to the database.
+If want to cancel,   click Cancel button.
+
+
+
+/******************************************************************/
+
+/******************************************************************/
+Shipping System:
+Login the system, click Shipper button at the right side of main interface.
+
+In the shipping interface, user can see all the shipping requirement today.
+
+To check the future plan, click Future Plan and user can see all the shipping plan.
+
+To make a shippment, select a shipping requirement in table, then click Ship button.
+
+After click Ship button, user can assign shipping task to Stock Handler and Shipping Company.
+
+Select the Stock Handler and Shipping Company, and input Tracking Number, then click Confirm button, the new shipping task will be created. 
+It will output all the information in text for test now.
+
+If want to cancel, click Cancel button.
+
+
+/******************************************************************/
+
+/******************************************************************/
+
+Order Stock System:
+Login the system, click Shipper button at the right side of main interface. Then click OrderStock button on the top of manager interface.
+
+If there are the same item in stock, user can search the details of the item by following setp:
+     1.Input item name or item number.
+     2.Click Search button.
+     3. If system can find the name or number in database, other information will fill in the text field automatically.
+         (If user input both name and number, the system will only use the name to search)
+     4. Input Quantity
+
+If there are no same item in stock, user need to input all the information.
+Then Click Confirm. the new order will be created.
+It will output all the information in text for test now.
+
+For test now, if user input "apple" or "banana" in name text field now, or input "1" or "2" in number text field,
+system will find the same item in database.
+If user input other data, system can not find the item can will not return any data.
+
+/******************************************************************/
+
+/******************************************************************/
+Modify Inventory:
+Login the system, click Shipper button at the right side of main interface. Then click Modify Inventory button on the top of manager interface.
+
+If there are the same item in stock, user can search the details of the item by following setp:
+     1.Input item name or item number.
+     2.Click Search button.
+     3. If system can find the name or number in database, other information will fill in the text field automatically.
+         (If user input both name and number, the system will only use the name to search)
+
+If there are no same item in stock, nothing will be filled in the text field.
+
+After search, user can modify any text field.
+Then click Confirm button, the new data will be written to database.
+It will output all the information in text for test now.
+
+For test now, if user input "apple" or "banana" in name text field now, or input "1" or "2" in number text field,
+system will find the same item in database.
+If user input other data, system can not find the item can will not return any data.

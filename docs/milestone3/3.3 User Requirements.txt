@@ -1,0 +1,5 @@
+The stock picker will require the system to print out a list of items to place onto pallets.
+He will also require a place to record the time of finishing each cart as well as inconsistancies in the system.
+
+
+The stock picker expects the list to be in order of his movements around the warehouse. 

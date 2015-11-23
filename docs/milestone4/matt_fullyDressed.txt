@@ -1,0 +1,24 @@
+Name: Routing Stocking Tasks
+Scope: Stock Handler
+Level: Subfunction
+Primary Actor: Stock Handler
+Stakeholders and Interests:
+	Manager - Desires Stock Handlers to be as efficient as possible, that they not attempt any actions that are impossible to complete (not enough space, stock not available for an order)
+	Receiver - Have products put away as quick as possible, ensure that all items are able to be put inside the warehouse
+	Shipper - Have products gathered quickly and efficiently, as a well formed pallet (not top heavy) and with all the items required for the order
+	Stock Handler - Handle tasks as quickly and easily as possible, without errors or backtracking on the warehouse floor
+Preconditions: 
+1) Stock has been received by the Receiver, is sitting at the warehouse entrance, and is ready to be placed into bins in the warehouse for storage
+2) Order has been recieved and all stock required for the order is within the warehouse
+Success Guaruntee: Most efficient route has been located, items are ordered by their 1) destination within the warehouse order or 2) destination within the warehouse for pickup
+Main Success Scenario: 
+1) After receiving items, receiver sends the purchase order manifest to this subfunction, items in the list are checked for a current location within the warehouse and assigned a bin to be placed in (with the old stock if it exists, otherwise a closest location), stock is not routed to be added to a bin that is already full, or that it will not fit in, the order of the items is returned to another subfunction that will create a printable plan for the Stock Handler
+2) After receiving an order that needs to be shipped, the shipper send the shipment manifest to this subfunction, items in the list are checked to confirm they are in the warehouse and their current location is recorded, if there are multiple locations for a product, they are both recorded, and a route is planned that will take into account the weight of the items being gathered (heaviest first), and the location of the items throughout the warehouse
+Extensions: Failure path: 
+1) Unable to store the items in the warehouse due to lack of space, return an error message to notify the user, do not return a list of items
+2) Unable to locate all the items required for the shipment, return an error message to notify the user, do not return a list of items
+Special Requirements: Must not specify that the stock be stored in a bin that it does not fit.
+Technology and Data Variations List: Two types of input, 1) List of items to be stored, 2) list of items to be retrieved.
+Output is the sorted list of items that were entered, sorted in the order that they should be handled
+Frequency of Occurence: Multiple times 
+Miscellaneous: None

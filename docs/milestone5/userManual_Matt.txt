@@ -1,0 +1,41 @@
+Login User Manual
+
+Currently, the system only has one user, to log in enter the credentials as follows:
+User ID #: 1
+Password: password
+Permission: Manager
+
+Any other credentials will deny your access to the system.
+
+Database Package User Manual
+
+The database package utilizes two different databases, a MySQL Database, and  a Neo4j Graph Database.
+
+The MySQL database is located on the uSask servers, and is connected to remotely by the MysqlDB class.
+
+The Neo4j database is stored locally within the application, in the graphDatabase/warehouse-db folder.  No set up is required by the user to install or use Neo4j.
+
+Calling each database to run a query is done through the static method runQuery, for example:
+	MysqlDB.runQuery(query);
+	Neo4jDB.runQuery(query);
+
+Within the database package is a number of interfaces and classes that implement the database functionality for each major task.  This are the only classes that will use the runQuery methods from above.
+
+Only the classes in the sub-packages of the database package will ever access the MysqlDB.java and Neo4j.java classes.  Each major function of the system has it's own database class that contains methods that will create queries, request the queries to be run, process and format the results, and return them to the calling method for use.
+
+The 5 classes that can be used are:
+GuiDB
+ManagerDB
+ReceiverDB
+ShipperDB
+StockHandlerDB
+
+Within each class are all of the functions required for use by each part of the program.  To use each class, an instance must be created, that instance can then be used to run the methods for each class.
+
+Overall, this is done by:
+<name>DB database=new <name>DB();
+<returnType> return=database.<method>(<parameter1>, <parameter2>...<parameterN>);
+
+Here is an example usage:
+ManagerDB database=new ManagerDB();
+String return=database.getProductName(123); //Where 123 is the product's ID

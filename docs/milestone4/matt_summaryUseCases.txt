@@ -1,0 +1,28 @@
+Use Case Name: Locate Stock
+Level: Summary
+Actors: Stock Handler, Manager, Shipper, Receiver
+Goal: Find stock location within the warehouse
+Activities: Find the location of the stock within the warehouse 
+using the GUI to click on the overhead map to view the products 
+in each bin, display location on stock reports, search using the 
+main screen of the GUI by item number or name to highlight on the 
+GUI the location of the stock. Display stock location when the 
+shipper creates shipping tasks.
+Quality: high quality, very accurate and reliable
+Version: October 8, 2013
+
+Use Case Name: Modify Inventory
+Level: Summary
+Actors: Receiver, Manager, Loss Prevention, Stock Handler
+Goal: Add and correct stock information
+Activities: Add new item information to the system,
+which would include name, description, item number, 
+category, price, quatity, and location.  Alter the 
+quantity of a stock item, in the case of a lost, 
+damaged, or stolen item. Change the location of the 
+item in the warehouse when it has been moved.
+Remove an item from the system if it has been 
+discontinued or will no longer be carried by the 
+warehouse.
+Quality: high quality, high ease of use, reliable
+Version: October 8, 2013

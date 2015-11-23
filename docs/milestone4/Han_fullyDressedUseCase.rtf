@@ -1,0 +1,64 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12180\viewh8820\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 Use case name: \
+	Manage Employees\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl360\slmult1\pardirnatural
+\cf0 Scope:\
+	Warehouse system\
+Level: \
+	User Goal\
+Primary Actor: \
+	Manager\
+\
+Stakeholders and Interested:\
+	Manager: Want to know the currently stuff including Shipper, receiver and stock picker working condition\
+	Stock Handler: report working status and schedule.\
+	Shipper: report working status and schedule.\
+	Receiver: report working status and schedule.\
+\
+\
+preconditions: \
+manager has the authenticated \
+\
+\
+Success guarantee: \
+	The employees working condition is reported and stored in the system. \
+	Assigned work tasks allocate effectively\
+	Manager's adjustment task schedule is saved\
+\
+\
+Main Success Scenario:\
+1. Manager starts the management system\
+2. Employees instantly report their working status and schedule regularly and it stored in the database.\
+3. System immediately updates shipper, receiver and stock picker working status and schedule \
+4. Manager checks all the employees' status in the management and reporting system\
+5. System return employees' status listing\
+6. Manager decide the personal adjustment. For instance, Manager can transfer the shipper department to receiver department. Then send command into system and it saved in database.\
+7. System sends work tasks detail to employees\
+8. Employees report received work tasks to system and it saved in database\
+9. System updates and display a message about employees known work tasks\
+10. Manager and employees exit management and reporting system\
+\
+\
+Special Requirement:\
+	Employees need to report their working status and schedule once they finished their current work or start their 	new work category \
+	The list of employees' working status need be refreshed automatically every 5 minutes.\
+\
+\
+Technology and Data Variations List:\
+	There are three kinds of work status busy, leisure and day off\
+	All employees update their working schedule every 5 minutes \
+	The form of work time is 24-hour e.g. 21:00\
+\
+\
+Frequency of Occurrence: \
+	Manager uses the management employees function hourly\
+	Especially, when all employees are busily engaged or some department are underhanded\
+\
+Issue: \
+	How to get the employees accurate schedule and their working time. It is difficult to gather\
+}

@@ -1,0 +1,67 @@
+User Manual:
+
+/*****************************************************/
+1. Delete Modify Inventory User Manual in last milestone.
+
+/*******************************************
+
+2.Order Stock User Manual: 
+
+The Order Stock menu allows the user to create purchase orders for more stock for the warehouse.
+From the map screen, click on the “Manager” button on the right side of the screen and click on the “Order Stock” tab on top of the Manager interface.
+Users can search the details of the item by following setup:
+1. Input item name or item number.
+2. Click the “Search” button.
+3. If system can find the name or number in database, other information will fill in the text field automatically.
+(If user input both name and number, the system will only use the name to search)
+4. Input Quantity
+If the same item is not already in the database, the user will need to input all of the information for the product. If the system cannot find the item, none of the fields will update.
+When the user clicks the “Confirm” button, the new order will be created.
+
+/******************************
+
+3.
+The Modify Inventory menu allows the user to edit the attributes for a specific inventory item in the warehouse.
+From the map screen, click on the “Manager” button on the right side of the screen and click on the “Modify Inventory” tab on top of the Manager interface.
+Users can search the details of the item by following setup:
+1. Input item name or item number.
+2. Click the “Search” button.
+14
+3. If system can find the name or number in database, other information will fill in the text field automatically.
+
+(If user input both name and number, the system will only use the name to search)
+If the same item is not already in the database, the user will need to input all of the information for the product. If the system cannot find the item, none of the fields will update.
+After the search, the user can modify any text field and click the “Confirm” button to write the new data to the database.
+
+
+/***************************
+
+4.
+Management System User Manual:
+Employee list has no change.
+
+Product List:
+Choose Product List in the top menu bar:
+1. Add New Product Info
+Click “Add” to open the new product window.
+Input the requirement information.
+
+Note: The expected input format for this menu is as follows:
+Name: String
+Item Number: int
+Quantity: int
+Price: float
+Size: float
+Description: String
+Weight: float
+Then click Confirm to created new item.
+2. Edit Product Info
+Select a product and click “Edit” to open the edit window.
+The information of the product will fill in the text field automatically.  Modify it and click confirm to write the new information to database.
+User also can open edit window the searth the item in stock.
+	1). Input item name or item number.
+	2). Click the “Search” button.
+	3). If system can find the name or number in database, other information will fill in the text field automatically.
+	(If user input both name and number, the system will only use the name to search)
+3. Delete Product
+Select a product and click “Delete” to remove them from the system.

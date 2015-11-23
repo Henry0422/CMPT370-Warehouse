@@ -1,0 +1,6 @@
+Sequence Diagram Name:
+1. Launch the system
+2. enter username
+3. enter password
+4. set up permission
+5. login the system

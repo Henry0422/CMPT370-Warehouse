@@ -1,0 +1,9 @@
+Reliability
+
+Concurrency
+The data which shown to the user must be the latest in database. 
+
+ 
+ Performance
+ Users want to get and input data very quickly. 
+ The time cost of each operation should be less than 5 seconds.

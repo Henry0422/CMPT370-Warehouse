@@ -1,0 +1,21 @@
+
+Operation: checkShipRequire()
+Cross References: uses cases: NIL
+Preconditions: NIL
+Postconditions:
+*All shipment requirements are listed in user interface.
+
+
+
+Operation: assignTask()
+Cross References: uses cases: check Shipment Requirement
+Preconditions: At least a stock picker is available.
+	       At least a shipping company is available.
+Postconditions:
+* All shipment requirements are listed in user interface.
+* A shipment requirement S is choosen.
+* Way-bill number is assigned by user input.
+* Delivery time is assigned by user input.
+* S is distributed to a shipping company
+* The picking task is distributed to a stock picker.
+* The shipping information is recorded.

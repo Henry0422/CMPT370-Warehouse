@@ -1,0 +1,8 @@
+1. routeStockTasks(Object[][] itemsList)
+   Controller - Stock Handler
+   A list of items that must be gathered or put away are passed in, they are then ordered by the operation to provide the optimal path.  The ordered list is passed back to the stock handler 
+   controller.
+
+2. locateProduct(int itemId)
+	 Controller - System
+	 An item ID is passed to this operation.  The operation then locates the products current location(s) within the warehouse and returns the bin coordinates (x, y) back to the system.

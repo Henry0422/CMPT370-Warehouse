@@ -1,0 +1,5 @@
+Modification of Domain Model:
+1. Removed schedule from Employee and added employee ID, since the system doesn't need schedule anymore.
+2. Added quantity attribute in Item Description, because we figured out the quantity of items is important for a warehouse.
+3. Added size and weight attribute in Item, because we figured out these attributes are factors for organizing the warehouse.
+4. Added name and quantity attribute in Shipments Information, because we figured out they are required information for shipment.

@@ -1,0 +1,4 @@
+1.  Check Future Plan
+2.  Receive Product
+3.  OrderStock
+4.  Check Shipment Requirement

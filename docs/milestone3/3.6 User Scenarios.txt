@@ -1,0 +1,14 @@
+Created by Xingze Guo
+
+3.6 - User Scenarios 
+For Shipper
+- Shipper may want to know the upcoming shipments, and assign upcoming shipments to a Stock Picker.
+- Shipper may want to know the future shipments plan to make schedule.
+- Shipper may want to record to outgoing shipment information.
+
+For Receiver
+- Receiver may want to record the information of incoming products.
+- Receiver may want to check if there is capacity in the warehouse for a given purchase order.
+- Receiver may want to check which shipments will need to be shipped before the warehouse has enough capacity 
+
+

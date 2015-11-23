@@ -1,0 +1,38 @@
+Class diagram information for Receiver
+
+class: makeShipment
+	fields:
+	    private ShipperDB database;
+		private shipmentTask newTask;
+		private int wayBill;
+		private int deliveryTime;	
+		private String stockPicker;		
+
+	methods:
+		public makeShipment
+		public Object shipRequire
+		public void inputDeliveryInfo(int number, int time)
+		public void inputItemInfor(int number, String name, 
+			int quantity, String destination, String date)
+		public Object pickerRequire
+		public Object companyRequire
+		public void setPicker(String picker)
+		public void setCompany(String company, String wayBill)
+		public void creatShipment
+		public Boolean makeRecord
+
+/*******************************************************/
+class :  shipmentTask
+	fileds:
+		private int wayBill;
+		private int itemNumber;
+		private int itemQuantity;
+		private String stockPicker;
+		private String itemDestination;
+		private String itemDate;
+		private String itemName;	
+    	private String shippingCompany;
+
+    methods:
+    	getter and setter
+

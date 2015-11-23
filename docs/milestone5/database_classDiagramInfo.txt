@@ -1,0 +1,89 @@
+class: MysqlDB
+attributes: 
+	private static MysqlDB database
+	private Connection connection
+	private final String DATABASEURL
+methods:
+	MysqlDB
+	private connect
+	static get
+	protected ResultSet runQuery
+
+class: Neo4jDB
+attributes:
+	private static Neo4j database
+	private Connection connection
+	private final String DATABASEPATH
+methods:
+	Neo4jDB
+	private connect
+	static get
+	protected ResultSet runQuery
+/****************************************************/
+//All of the following classes connect to the relevant above two classes
+	
+class: GuiDB
+methods:
+	public int createBin(int row, int column)
+	public boolean removeBin(int id)
+	public int getBinId(int row, int column)
+	public Object[] getBinLocations()
+
+class: ManagerDB
+methods:
+	public Object[] getEmployees
+	public float getEmployeeSpeed(int employeeId)
+	public int addEmployee(String name)
+	public boolean setTitle(int employeeId)
+	public int createOrder
+	public float addSpeedDataPoint(int employeeId, float time)
+	public Object[] getProductList
+	public Object[] getProductOrderList
+	public Object[] getProductOrdersWithin(String date1, String date2)
+	public Object[] getShipmentList
+	public Object[] getShipmentWithin(String date1, String date2)
+	public Object[] getBinStockLevels
+	public Object[] getProductTurnoverSpeed
+
+class: ReceiverDB
+methods:
+	public Object[] getOrderProducts(int orderId)
+	public boolean markOrderReceived(int orderId)
+	public boolean setOrderStatus(int orderId, String status)
+	public boolean addItemsToOrder(int orderId, Object[] itemsList)
+	public boolean setTrackingNumber(int orderId, String trackingNum)
+	public boolean updateProductQuantity(int orderId, int productId, int quantity)
+	public Object[] getOrderDetails(int orderId)
+	public String getOrderStatus(int orderId)
+	public int addProduct(String name, String category, float price, float weight)
+	public Object[] getProductCategories()
+	public in addProductCategory(String name)
+	public boolean addStock(int productId, int quantity)
+
+class: ShipperDB
+methods:
+	public Object[] getShipmentList
+	public Object[] getPendingShipmentList
+	public Object[] getShipmentDetails(int shipmentId)
+	public Object[] getShipmentProducts(int shipmentId)
+	public String getShipmentStatus(int shipmentId)
+	public float getShipmentWeight(int shipmentId)
+	public int createShipment(String destination)
+	public boolean addItemsToShipment(Object[] itemList)
+	public boolean setShipmentStatus(int shipmentId, String status)
+	public boolean markShipmentSent(int shipmentId)
+	public boolean setShipmentDate(int shipmentId, String date)
+	public boolean setShipmentDestination(int shipmentId, String destination)
+	public boolean updateProductQuantity(int shipmentId, int productId, int quantity)
+	public boolean setTrackingNumber(int shipmentId, String trackingNum)
+	public boolean decreaseStock(int productId, int quantity)
+	public Object[] getStockHandlers
+	public Object[] getShippingCompanies
+	
+class: StockhandlerDB
+methods:
+	public Object[] getProductDetails(int prodId)
+	public Object[] getProductLocation(int prodId)
+	public Object[] getBinProducts(int binId)
+	public Object[] findBestPath(Object[] itemsObjects[])
+	public Object[] assignBins(Object[] itemsObject[]_

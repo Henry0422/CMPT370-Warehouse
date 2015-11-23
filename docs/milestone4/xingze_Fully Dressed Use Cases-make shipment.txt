@@ -1,0 +1,55 @@
+Scope: Make shipment
+Level: user goal
+Primary Actor: Shipper
+Stakeholders and Interests:
+
+	* Shipper: Wants to check the shipment required then assign tasks to stock picker and shipping company
+	* Stock Picker: Wants to know the latest picking requirement 
+	* Shipping Company: Wants to know the information of the shipping requirement, including name, weight, volume and destination
+	* Manager: Wants to know what product has been shipped.
+
+Preconditions: Shipper is identified and authenicated
+Success Guarantee: The shipmen task is assigned to a stock picker and a shipping company. The shipping record is saved.
+
+Main Success Scenario:
+
+<<<<<<< HEAD
+	1. Shipper start the system.
+	2. Shipper checks the latest shipment requirement.
+	3. Shipper input the way-bill number and delivery time.
+	4. Shipper assign the shipment task to a shipping company.
+	5. Shipper assign the picking task to a stock picker. Let the stock picker carries the products to the shipping company.
+	6. System save the shipping record and input it into database.
+	7. Shipper leaves the system.
+=======
+	1. Shipper starts the system.
+	2. Shipper checks all the shipment requirement.
+	3. Shipper choose a shipment requirement.
+	4. Shipper input the way-bill number and delivery time.
+	5. Shipper assign the shipment task to a shipping company.
+	6. Shipper assign the picking task to a stock picker. Let the stock picker carries the products to the shipping company.
+	7. System tell shipper the operation is finished.
+	8. System save the shipping record and input it into database.
+	9. Shipper leaves the system.
+>>>>>>> origin/master
+
+Extensions
+ At any time, Shipper can check the future shipment requirement but do not assign it the shipping company immediately.
+
+Special Requirement:
+Because the database updates all the time, The list of shipment requirement need be refreshed automatically every 1 minutes.
+
+Technology and Data Variations List:
+
+	* Shipper choose the requirement, stock picker and shipping company by click mouse.
+	* Shipper input the way-bill number and delivery time by keyboard.
+	* The form of way-bill number is a sisteen digits.
+	* The form of delivery time is yyyy/mm/dd, e.g. 2013/10/25.
+	* Stock pickers and shipping companies are identified by name.
+
+Frequency of Occurrence: Could be nearly continuous.
+
+Open Issues: 
+
+	* What if the shipment need be canceled or changed?
+

@@ -1,0 +1,19 @@
+Created by Xingze Guo
+
+3.3 User-level goals for the system
+
+User are expected to
+- use the Management&Reporting System to check the information of goods in warehouse, include name,description, item number, category, price, quantities, location within warehouse.
+- use the Management&Reporting System to display shipping report for a given time period (past, present or future), including date ordered, status (pending, gathered, shipped), tracking information if available, weight, destination, product and manifest.
+- use the Management&Reporting System to display purchase order report for a given time period (past, present or future), including date ordered, tracking information if available, cost, and product manifest.
+- use the Management&Reporting System to display statistics reports, listing the fastest selling products, slowest moving products, the percentage of the warehouse space currently being used.
+- use the Management&Reporting System to display employee status report (showing from one employee’s information, to all employee’s information) such as name, title, employee speed (i.e. orders gathered per hour, average time to ship a shipment, average time to receive a shipment).
+- use the Management&Reporting System to create, modify and delete orders made to the warehouse.
+- use the Management&Reporting System to create, modify and delete purchase orders made by the warehouse.
+- use the Shipper System to check upcoming shipments.
+- use the Shipper System to assign upcoming shipments to a Stock Picker.
+- use the Shipper System to record outgoing shipment information.
+- use the Receiver System to input information of incoming products.
+- use the Receiver System to check if there is capacity in the warehouse for a given purchase order.
+- use the Receiver System to check which shipments will need to be shipped before the warehouse has enough capacity.
+

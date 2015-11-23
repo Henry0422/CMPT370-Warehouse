@@ -1,0 +1,11 @@
+Use Case Name:Receive Purchase Order
+Describution:Recording information on newly received stock, increasing warehouse stock level to correspond to received shipments, assign Stock Handler to store the product
+
+Use Case Name:Send Shipments
+Describution:Remove stock from the warehouse, assign the shipment task to a stock picker and shipping company.
+
+Use Case Name:Check Future Plan
+Describution: Check Future shipment plan. 
+
+Use Case Name: Order Stock
+After viewing the Stock Level Report, the Manager will identify which products they will require more of for future shipments to customers. The Manager will create a new purchase order using the Management & Reporting System. They will then enter the item number and the quantity for the order, the system will then get the item name, size, and weight information and attach it to the purchase order, which will be sent to the 3rd Party Product Suppliers.
